@@ -1,0 +1,83 @@
+# Configuration for Chest X-Ray Pneumonia Classification with RL-based Augmentation
+
+# Model Configuration
+model:
+  num_classes: 2
+  img_size: 224
+  base_channels: 32
+  transformer_dim: 256
+  nhead: 4
+  num_transformer_layers: 2
+  dropout: 0.3
+
+# PPO Agent Configuration (Table 4)
+ppo:
+  state_dim: 100
+  action_dim: 60
+  hidden_dim: 256
+  actor_lr: 0.0001      # 1×10⁻⁴
+  critic_lr: 0.0005     # 5×10⁻⁴
+  gamma: 0.99           # Discount factor
+  gae_lambda: 0.95      # GAE lambda
+  clip_epsilon: 0.2     # PPO clipping
+  entropy_coef: 0.02    # Entropy coefficient
+  ppo_update_freq: 4    # Update every 4 batches
+  ppo_epochs: 4         # 4 PPO epochs per update
+  buffer_size: 1024     # Buffer Size from Table 4
+  batch_size: 128       # PPO Batch Size from Table 4
+
+# Training Configuration (Table 4 & Section 4.3)
+training:
+  batch_size: 64
+  num_epochs: 150
+  classifier_lr: 0.0002   # 2×10⁻⁴
+  weight_decay: 0.01
+  rl_start_epoch: 10      # Pre-train 10 epochs without RL
+  num_workers: 4
+  save_freq: 10
+  warmup_epochs: 5        # 5-epoch warm-up for cosine annealing
+  ema_lambda: 0.99        # EMA smoothing for ΔAcc and ΔECE
+
+# Curriculum Learning Configuration
+curriculum:
+  num_stages: 5
+  update_freq: 20
+  safety_threshold: 1.5
+
+# Reward Function Weights
+reward:
+  alpha: 1.0    # Accuracy improvement
+  beta: 0.3     # Augmentation diversity
+  delta: 0.5    # Calibration improvement
+  gamma: 0.1    # Computational cost penalty
+  epsilon: 2.0  # Clinical implausibility penalty
+
+# Data Configuration
+data:
+  train_dir: "data/train"
+  val_dir: "data/val"
+  test_dir: "data/test"
+  train_csv: null
+  val_csv: null
+  test_csv: null
+
+# Augmentation Configuration
+augmentation:
+  rotation_range: [-8, 8]
+  brightness_range: [0.9, 1.2]
+  contrast_range: [0.8, 1.2]
+  gaussian_noise_range: [0.0, 0.03]
+  gaussian_blur_range: [0.0, 1.0]
+  num_levels: 12
+
+# Paths
+paths:
+  checkpoint_dir: "results/checkpoints"
+  log_dir: "results/logs"
+  results_dir: "results"
+
+# Random Seeds for Reproducibility
+seeds: [42, 123, 2025, 314, 555]
+
+# Device Configuration
+device: "cuda"  # or "cpu"
