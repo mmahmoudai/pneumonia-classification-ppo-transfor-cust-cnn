@@ -1,6 +1,6 @@
 # Chest X-Ray Pneumonia Classification with Clinically Constrained RL-based Augmentation
 
-This project implements a **clinically constrained reinforcement learning framework** for adaptive data augmentation in chest X-ray pneumonia classification, based on the research paper "Clinically Constrained Reinforcement Learning for Optimized Adaptive Data Augmentation in Chest X-Ray Pneumonia Classification" by Muhammad Mahmoud.
+This project implements a **clinically constrained reinforcement learning framework** for adaptive data augmentation in chest X-ray pneumonia classification, for our the research paper "Clinically Constrained Reinforcement Learning for Optimized Adaptive Data Augmentation in Chest X-Ray Pneumonia Classification".
 
 ## Project Overview
 
