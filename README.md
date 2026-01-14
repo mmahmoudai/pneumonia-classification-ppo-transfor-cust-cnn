@@ -1,6 +1,6 @@
 # Chest X-Ray Pneumonia Classification with Clinically Constrained RL-based Augmentation
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18244405.svg)](https://doi.org/10.5281/zenodo.18244405)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
@@ -301,8 +301,8 @@ If you use this code in your research, please cite:
   year         = 2025,
   publisher    = {Zenodo},
   version      = {v1.0.0},
-  doi          = {10.5281/zenodo.XXXXXXX},
-  url          = {https://doi.org/10.5281/zenodo.XXXXXXX}
+  doi          = {10.5281/zenodo.18244405},
+  url          = {https://doi.org/10.5281/zenodo.18244405}
 }
 ```
 
@@ -316,8 +316,6 @@ If you use this code in your research, please cite:
   year={2025}
 }
 ```
-
-> **Note:** After the first release is published on Zenodo, the DOI badge and citation will be automatically updated with the actual DOI number.
 
 ## License
 
