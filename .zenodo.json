@@ -1,0 +1,32 @@
+{
+  "title": "Clinically Constrained Reinforcement Learning for Optimized Adaptive Data Augmentation in Chest X-Ray Pneumonia Classification",
+  "description": "A clinically constrained reinforcement learning framework for chest X-ray pneumonia classification. Combines CNN-Transformer architecture with PPO-based adaptive augmentation, achieving 97.23% accuracy with excellent calibration (ECE = 0.016).",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Mahmoud, Muhammad",
+      "affiliation": "Department of Information Systems, Faculty of Computers and Artificial Intelligence, Matrouh University, Egypt"
+    }
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": [
+    "chest x-ray",
+    "pneumonia classification",
+    "deep learning",
+    "reinforcement learning",
+    "PPO",
+    "data augmentation",
+    "medical imaging",
+    "CNN-Transformer",
+    "clinical AI",
+    "machine learning"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "https://github.com/mmahmoudai/pneumonia-classification-ppo-transfor-cust-cnn"
+    }
+  ],
+  "version": "1.0.0"
+}
