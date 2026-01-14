@@ -1,6 +1,6 @@
 {
   "title": "Clinically Constrained Reinforcement Learning for Optimized Adaptive Data Augmentation in Chest X-Ray Pneumonia Classification",
-  "description": "This project implements a clinically constrained reinforcement learning framework for adaptive data augmentation in chest X-ray pneumonia classification. The framework combines CNN-Transformer hybrid architecture for robust feature extraction, PPO-based RL agent for adaptive augmentation policy learning, clinically constrained action space preserving anatomical plausibility, curriculum learning with safety rollback mechanisms, and multi-objective reward function balancing accuracy, diversity, calibration, and clinical validity. The model achieves 97.23% accuracy on internal test set with excellent calibration (ECE = 0.016) and robust generalization across external cohorts (AUC = 0.950 average).",
+  "description": "A clinically constrained reinforcement learning framework for chest X-ray pneumonia classification. Combines CNN-Transformer architecture with PPO-based adaptive augmentation, achieving 97.23% accuracy with excellent calibration (ECE = 0.016).",
   "upload_type": "software",
   "creators": [
     {

@@ -297,9 +297,7 @@ If you use this code in your research, please cite:
 ```bibtex
 @software{mahmoud2025pneumonia_rl,
   author       = {Mahmoud, Muhammad},
-  title        = {{Clinically Constrained Reinforcement Learning for 
-                   Optimized Adaptive Data Augmentation in Chest X-Ray 
-                   Pneumonia Classification}},
+  title        = {{Clinically Constrained Reinforcement Learning for Optimized Adaptive Data Augmentation in Chest X-Ray Pneumonia Classification}},
   year         = 2025,
   publisher    = {Zenodo},
   version      = {v1.0.0},
