@@ -1,5 +1,9 @@
 # Chest X-Ray Pneumonia Classification with Clinically Constrained RL-based Augmentation
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+
 This project implements a **clinically constrained reinforcement learning framework** for adaptive data augmentation in chest X-ray pneumonia classification, based on the research paper "Clinically Constrained Reinforcement Learning for Optimized Adaptive Data Augmentation in Chest X-Ray Pneumonia Classification" by Muhammad Mahmoud.
 
 ## Project Overview
@@ -288,6 +292,24 @@ Results across 5 runs: **97.23% ± 0.22%** (range: 97.01–97.45%)
 
 If you use this code in your research, please cite:
 
+### Software Citation (DOI)
+
+```bibtex
+@software{mahmoud2025pneumonia_rl,
+  author       = {Mahmoud, Muhammad},
+  title        = {{Clinically Constrained Reinforcement Learning for 
+                   Optimized Adaptive Data Augmentation in Chest X-Ray 
+                   Pneumonia Classification}},
+  year         = 2025,
+  publisher    = {Zenodo},
+  version      = {v1.0.0},
+  doi          = {10.5281/zenodo.XXXXXXX},
+  url          = {https://doi.org/10.5281/zenodo.XXXXXXX}
+}
+```
+
+### Research Paper Citation
+
 ```bibtex
 @article{mahmoud2025clinically,
   title={Clinically Constrained Reinforcement Learning for Optimized Adaptive Data Augmentation in Chest X-Ray Pneumonia Classification},
@@ -296,6 +318,8 @@ If you use this code in your research, please cite:
   year={2025}
 }
 ```
+
+> **Note:** After the first release is published on Zenodo, the DOI badge and citation will be automatically updated with the actual DOI number.
 
 ## License
 

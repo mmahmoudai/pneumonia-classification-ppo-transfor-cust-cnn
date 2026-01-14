@@ -1,0 +1,38 @@
+# CITATION.cff - Citation File Format for software citation
+# This file enables users to cite this software correctly and integrates with
+# DOI services like Zenodo for persistent identifiers.
+
+cff-version: 1.2.0
+title: "Clinically Constrained Reinforcement Learning for Optimized Adaptive Data Augmentation in Chest X-Ray Pneumonia Classification"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: "Mahmoud"
+    given-names: "Muhammad"
+    email: "m.mahmoud@mau.edu.eg"
+    affiliation: "Department of Information Systems, Faculty of Computers and Artificial Intelligence, Matrouh University, Egypt"
+repository-code: "https://github.com/mmahmoudai/pneumonia-classification-ppo-transfor-cust-cnn"
+url: "https://github.com/mmahmoudai/pneumonia-classification-ppo-transfor-cust-cnn"
+abstract: >-
+  This project implements a clinically constrained reinforcement learning framework
+  for adaptive data augmentation in chest X-ray pneumonia classification. The framework
+  combines CNN-Transformer hybrid architecture for robust feature extraction, PPO-based
+  RL agent for adaptive augmentation policy learning, clinically constrained action space
+  preserving anatomical plausibility, curriculum learning with safety rollback mechanisms,
+  and multi-objective reward function balancing accuracy, diversity, calibration, and
+  clinical validity. The model achieves 97.23% accuracy on internal test set with
+  excellent calibration (ECE = 0.016) and robust generalization across external cohorts.
+keywords:
+  - chest x-ray
+  - pneumonia classification
+  - deep learning
+  - reinforcement learning
+  - PPO
+  - data augmentation
+  - medical imaging
+  - CNN-Transformer
+  - clinical AI
+  - machine learning
+license: MIT
+version: "1.0.0"
+date-released: "2025-01-14"
